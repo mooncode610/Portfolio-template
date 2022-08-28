@@ -1,0 +1,136 @@
+.item-center{
+    position:absolute;
+    top:-200%;
+    left: -100%;
+    text-align:center;
+    display:inline-block;
+    width:100%;
+}
+
+.icon-wrap {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.button-icon {
+    height: 40px;
+    width: 40px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 22px;
+}
+
+
+
+.sidemenu_btn span:nth-child(1)  { left: 4px; animation-duration: 674ms; }
+.sidemenu_btn span:nth-child(2)  { left: 4px; animation-duration: 733ms; }
+.sidemenu_btn span:nth-child(3)  { left: -12px; animation-duration: 507ms; }
+
+/* Cursor */
+
+#magic-cursor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+    z-index: 10000;
+    -webkit-transition: opacity 0.2s ease-in-out 0.5s;
+    transition: opacity 0.2s ease-in-out 0.5s;
+}
+#ball {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 1;
+    box-sizing: border-box;
+}
+
+#ball:before {
+    font-family: FontAwesome;
+    content: "\f053";
+    font-size: 6px;
+    width: 4px;
+    height: 8px;
+    line-height: 8px;
+    text-align: center;
+    position: absolute;
+    left: -12px;
+    top: 9px;
+    color: #000;
+    opacity: 0;
+    transition: all 0.1s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+#hold-event {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 100%;
+    background: rgba(255,255,255,0);
+}
+
+#ball-loader {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid transparent;
+    border-top: 2px solid transparent;
+    border-radius: 50px;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translate(-9px, -9px) rotate(0deg);
+    -webkit-animation: rotating 0.8s ease-in-out infinite;
+    animation: rotating 0.8s ease-in-out infinite;
+    -webkit-transition: opacity 0s ease-in-out 0s;
+    transition: opacity 0s ease-in-out 0s;
+}
+
+#ball:after {
+    font-family:"Playfair Display";
+    content: "\f054";
+    font-size: 6px;
+    width: 4px;
+    height: 8px;
+    line-height: 8px;
+    text-align: center;
+    position: absolute;
+    right: -10px;
+    top: 9px;
+    color: #000;
+    opacity: 0;
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+@keyframes rotating {
+    0% {
+        -webkit-transform: translate(-7px, -7px) rotate(0deg);
+        transform:  translate(-7px, -7px) rotate(0deg);
+    }
+
+    95% {
+        -webkit-transform:  translate(-7px, -7px) rotate(350deg);
+        transform:  translate(-7px, -7px) rotate(350deg);
+    }
+
+    100% {
+        -webkit-transform:  translate(-7px, -7px) rotate(360deg);
+        transform:  translate(-7px, -7px) rotate(360deg);
+    }
+}

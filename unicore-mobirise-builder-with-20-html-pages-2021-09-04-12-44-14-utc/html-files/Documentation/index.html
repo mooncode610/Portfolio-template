@@ -1,0 +1,490 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Unicore Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,400italic,300italic,700,900' rel='stylesheet' type='text/css'>
+
+	<link type="text/css" rel="stylesheet" href="styles/SyntaxHighlighter.css"></link>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700,800' rel='stylesheet' type='text/css'>
+
+	<script language="javascript" src="script/shCore.js"></script>
+	<script language="javascript" src="script/shBrushCss.js"></script>
+	<script language="javascript" src="script/shBrushXml.js"></script>
+	<script language="javascript" src="script/shBrushJScript.js"></script>
+	<script language="javascript">
+	window.onload = function () {
+    dp.SyntaxHighlighter.ClipboardSwf = '/script/clipboard.swf';
+    dp.SyntaxHighlighter.HighlightAll('code');
+	}
+	</script>
+	<style type="text/css" media="screen">
+		body {font-family:Roboto;background:#fff;margin:0;padding:0}
+		.container {background:#fff;}
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		pre, code{ 
+		font-size: 14px;
+		margin:1.5em 0;
+		white-space:pre;
+		}
+
+.main-head {
+    text-transform: uppercase;
+    color: #fff !important;
+    font-size: 14px !important;
+    padding: 25px !important;
+    background: #111;
+    margin: 0;
+    border: none;
+    letter-spacing: 1px;
+}
+	</style>
+
+
+</head>
+
+
+<body>
+	<h3 class="center alt main-head"><b>Unicore</b> - Documentation</h3>
+
+	<div class="container">
+		
+		<h1 class="center">&ldquo;Unicore - Responsive Multipurpose landing page&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: Jun 01, 2016<br>
+					By: ElectricBlaze<br>
+					Email: <a href="http://electricblaze.com/">http://electricblaze.com/</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#Tutorial">Tutorial</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme is a Responsive layout with four column. Based on Bootstrap Framework. All of the information within the main content area is nested within a div with an id of "container". The sidebar's (column #2) content is within a div with an id of "secondaryContent". The general template structure is the same throughout the template. Here is the general structure.</p>
+		
+		<img src="assets/images/htmlstructure.png" alt="HTML Structure" />
+		
+		<p>If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following:</p>
+
+<strong>For header</strong>
+<pre name="code" class="html">
+header {
+		background-color: #hexcode; //---for background change---//
+		color: #hexcode; //---for font color change---//
+}
+</pre>
+
+	<p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours.</p> 
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>I'm using Five CSS files in this theme. The first one is the main source file for bootstrap framework</p> 
+
+		<p>The second file contains all of the specific stylings for the page. The file is separated into sections using:</p>  
+
+<pre name="code" class="html">
+
+/* 1. GLOBAL STYLES */
+css codes
+
+/* 2. HEADER */
+css codes
+	
+/* 3. INTRO STYLES */
+css codes
+	
+/* 4. TERMS / POPUP */
+css codes
+
+/* 5. SERVICES */
+css codes
+
+/* 6. FEATURES */
+css codes
+
+/* 7. INFO BOXES */
+css codes
+
+/* 8. INFO BOXES / DUAL */
+css codes
+
+/* 9. SCREENSHOTS  */
+css codes
+
+etc....
+</pre>
+		
+
+		<p>The third file contains all of the specific stylings for the Prettyphoto Lightbox.</p>  
+		<p>The fourth file contains all of the specific stylings for Slick Carousel.</p>  
+		<p>The fifth file contains all of the specific stylings for Font-Awesome Icons.</p>  
+
+		<p>Dont change anything in first(bootstrap.css) file.
+
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports Thirteen Javascript files.</p>
+		
+		<ol>
+			<li>jQuery</li>
+		</ol>
+		  
+		<strong>Details</strong>
+		<ol>
+			<li>jquery.js - To enable jQuery</li>
+			<li>bootstrap.min.js - Bootstrap js file</li>
+			<li>slick.min.js - Slick Carousel</li>
+			<li>jquery.placeholder.js - Jquery placeholder</li>
+			<li>jquery.easing.min.js - Jquery easing plugin</li>
+			<li>jquery.ketchup.all.min.js - Mailchimp plugin</li>
+			<li>jquery.animateNumber.js - Animate Number Plugin</li>
+			<li>jquery.appear.js - Onview Animate Plugin</li>
+			<li>jquery.inview.js - Onview Animate Plugin</li>
+			<li>isotope.pkgd.js - Isotope Plugin</li>
+			<li>jquery.prettyphoto.js - Lightbox Plugin</li>
+			<li>contact.js - Contact form Support PLugin</li>
+			<li>main.js - Custom theme support file</li>
+		</ol>
+
+		<hr>
+
+		<h3 id="Tutorial"><strong>D) Tutorial</strong> - <a href="#toc">top</a></h3>
+
+		<p>Follow the steps below to change the demo contents with your own contents.</p>
+
+</br>
+</br>
+
+<p><strong>1. LOGO SECTION</strong></p>
+<p>To replace the logo name, find this code</p>
+
+<pre name="code" class="html">
+	<a class="navbar-brand" href="./index.html">Unicore</a>
+</pre>
+<p>replace "<strong>Unicore</strong>" with your website name Or logo image url/source</p>
+
+</br>
+<hr>
+
+<p><strong>2. NAVMENU</strong></p>
+
+<p>Open index.html file and find this code.</p>
+
+<pre name="code" class="html">
+	<ul class="nav navbar-nav navbar-right">
+						<li><a class="page-scroll" href="#pricing">Pricing</a></li>
+						<li class="dropdown">
+							<a href="./about.html">Pages</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="./about.html">About</a></li>
+								<li><a href="./faq.html">Faq</a></li>
+								<li><a href="./404.html">404 Page</a></li>
+							</ul>
+						</li>
+	</ul>
+</pre>
+
+</br>
+<p>Replace "Pricing", "About" with the menu name and "#" with the page link or anchor link.</br>
+</p>
+
+</br>
+</br>
+<hr>
+
+<p><strong>3. INTRO CONTENT</strong></p>
+
+<p><strong>Intro Content</strong></p>
+
+<p>Find this code</p>
+
+<pre name="code" class="html">
+					<h3>Meet the Unicore<br>Landing page toolkit</h3>
+					<p>Nam tellus turpis blandit et ligula vel lacinia massa sit amet minus fugit in ipsum semper euismod massa auctor magna eget nunc iaculis nunc.</p>
+
+					<a href="https://www.youtube.com/watch?v=bZx8rPd-PKQ" class="swipebox-video"><span class="intro-play-btn">Watch<i class="icon-play2"></i>Video</span></a>
+					<div class="dual-btn">
+						<a href="#" class="btn btn-lg btn-primary">Purchase Now</a>
+						<a href="#" class="btn btn-lg btn-default btn-border">Learn More</a>
+					</div>
+</pre>
+
+<p>replace the text between "&lt;h3&gt;" "&lt;/h3&gt;" and "&lt;p&gt;" "&lt;/p&gt;" with the intro title and description.</br>
+<p>replace "<strong>Purchase Now</strong>" and "<strong>Learn More</strong>" with the button name.</br>
+<p>replace "#" with the button links.</br>
+<p>Same for all intro pages</br>
+
+</br>
+</br>
+<hr>
+
+<p><strong>Intro Newsletter (mailchimp)</strong></p>
+<p>Open "subscribe.php" file from "PHP" folder and find this.</p>
+
+<pre name="code" class="html">
+$apiKey = 'YOUR_API_KEY';
+</pre>
+
+<p>Replace "YOUR_API_KEY" with your mailchimp API key - <a href="http://kb.mailchimp.com/accounts/management/about-api-keys#Find-or-Generate-Your-API-Key" target="_blank">How to get API key?</a></p>
+
+<br>
+
+<pre name="code" class="html">
+$listId = 'YOUR_LIST_ID';
+</pre>
+
+<p>Replace "YOUR_LIST_ID" with your mailchimp newsletter list id - <a href="http://kb.mailchimp.com/lists/managing-subscribers/find-your-list-id" target="_blank">How to get List ID?</a></p>
+
+<br>
+
+<pre name="code" class="html">
+$submit_url = "http://us3.api.mailchimp.com/1.3/?method=listSubscribe";
+</pre>
+
+<p>Replace "us3" with your actual data center (You can find the data center on the API key)</p>
+
+<br>
+
+</br>
+</br>
+<hr>
+
+<p><strong>4. SERVICES SECTION</strong></p>
+<p>Find this code.</p>
+
+<pre name="code" class="html">
+					<div class="service-box">
+						<i class="icon2-laptop-phone"></i>
+						<div>
+							<h4>Responsive Design</h4>
+							<p>Nam tellus turpis blandit et ligula sit amet mattis congue semper euismod massa auctor magna eget nunc iaculis nunc.</p>
+						</div>
+					</div>
+</pre>
+
+</br>
+<p>To replace the icon, go to this <a href="http://fontawesome.io/icons" target=_blank">link</a> and choose your icon and replace "icon2-laptop-phone" with your icon name. or go to "css/icons" folder and open each folder and open .html file in browser and choose your icon</p>
+<p>Replace the text between "&lt;h4&gt;" "&lt;/h4&gt;" and "&lt;p&gt;" "&lt;/p&gt;" with the service title and description.</br>
+This will be the same for all service columns.</p>
+
+</br>
+</br>
+<hr>
+
+<p><strong>5. TESTIMONIALS </strong></p>
+<p>Find this code</p>
+
+<pre name="code" class="html">
+						<div>
+							<i class="icon-chat5"></i>
+							<p>Unicore is hands down the most flexible and enjoyable HTML template. It was built with the awesome bootstrap framework and with multiple layouts and more.</p>
+							<span class="author">Mark Dave - Web Design</span>
+						</div>
+</pre>
+
+<p>replace the text between "&lt;p&gt;" "&lt;/p&gt;" with the quote info.</br>
+<p>replace the text between "&lt;div class="author"&gt;" "&lt;/div&gt;" with the quote author info.</br>
+</br>
+</br>
+<hr>
+
+<p><strong>6. PRICING TABLE</strong></p>
+<p>Find this code</p>
+
+<pre name="code" class="html">
+					<!-- Pricing Plan - 1 -->
+					<div class="col-md-4 col-sm-4">
+						<div class="pricing__item">
+							<h3 class="pricing__title">Startup</h3>
+							<p class="pricing__sentence">Perfect for small less than 10 team</p>
+							<div class="pricing__price"><span class="pricing__currency">$</span>19<span class="pricing__period">/ month</span></div>
+							<ul class="pricing__feature-list">
+								<li class="pricing__feature">1 GB of space</li>
+								<li class="pricing__feature">Support at $25/hour</li>
+								<li class="pricing__feature">Small social media</li>
+							</ul>
+							<button class="btn btn-default">Choose Plan</button>
+						</div>
+					</div>
+</pre>
+
+<p>replace "<strong>Startup</strong>" with the plan name.</br>
+replace the text between "&lt;div class="pricing__price"&gt;" "&lt;/div&gt;".</br>
+replace the text between "&lt;li&gt;" "&lt;/li&gt;" with the plan features.</br>
+replace the  "#" in "&lt;a href="#"&gt;" with the link to the plan page or checkout page.<br>
+</p>
+
+Do the same for all four.
+</br>
+</br>
+<hr>
+
+<p><strong>7. GOOGLEMAP </strong></p>
+
+<p>Open "contact.html" and find this.</p>
+
+<pre name="code" class="html">
+40.6700, -73.9400
+</pre>
+
+<p>Go to this <a href="http://itouchmap.com/latlong.html" target="_blank">link</a> and in the search bar update your location or address and press go.<br>
+Scroll down the page to see the lattitude and longitude of your location. Update those here in both places and save.</p>
+</ol>
+
+<br>
+<hr>
+
+
+<p><strong>8. CONTACT FORM</strong></p>
+
+<p>Open "contact.php" file from "PHP" folder and find this code.</p>
+
+<pre name="code" class="html">
+
+define( "RECIPIENT_NAME", "YOUR_NAME_HERE" );
+define( "RECIPIENT_EMAIL", "YOUR_EMAIL_HERE" );
+					
+</pre>
+
+</br>
+<p>
+Replace "YOUR_NAME_HERE" with your name</br>
+Replace "YOUR_EMAIL_HERE" with your email, where you want to receive the mails.</br>
+</p>
+
+</br>
+</br>
+<hr>
+
+<p><strong>9. COPYRIGHT</strong></p>
+
+<pre name="code" class="html">
+
+					<p>&copy; 2016. Unicore. All rights reserved.</p>
+					
+</pre>
+
+<p>Replace the Copyright contents with yours.</p>
+
+</br>
+</br>
+<hr>
+
+<p><strong>10. VIDEO POPUP</strong></p>
+
+<p>Find this</p>
+<pre name="code" class="html">
+
+<a href="https://www.youtube.com/watch?v=ir1xdtIb-g0" class="prettyPhoto video-link"></a>
+</pre>
+
+<p>Replace "https://www.youtube.com/watch?v=ir1xdtIb-g0" with your video url. Youtube, vimeo or whatever.</p>
+
+</br>
+</br>
+<hr>
+
+<p><strong>CHANGE SKIN</strong></p>
+
+Open the HTML file in Notepad++ or any HTML editor and find this
+
+<pre name="code" class="html">
+	<link rel="stylesheet" href="css/skin/default.css">
+</pre>
+
+Now open CSS > SKIN folder and choose a color and replace default.css with it. 
+<br>
+
+For example, for red use this
+
+<pre name="code" class="html">
+	<link rel="stylesheet" href="css/skin/red.css">
+</pre>
+
+<br>
+<hr>
+
+<p><strong>BOXED VERSION</strong></p>
+	
+Open html file and find this
+
+<pre name="code" class="html">
+	id="page-top"
+</pre>
+
+change it to
+
+<pre name="code" class="html">
+	id="page-top" class="boxed"
+</pre>
+
+<br>
+<hr>
+
+
+<h3>Thats it. You are done. Now your website is ready to launch.</h3>
+
+</br>
+</br>
+</br>
+<hr>
+
+		
+	
+		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following images, icons, plugins, fonts or other files as listed.
+		<div style="clear:both;"></div>
+		<ul>
+			<li>Google WebFont used - <a href="http://www.google.com/webfonts/specimen/Poppins" target="_blank">Poppins</a></li>
+			<li>Google WebFont used - <a href="http://www.google.com/webfonts/specimen/Lato" target="_blank">Lato</a></li>
+			<li>Fonticons by - <a href="http://fontawesome.io" target="_blank">fontawesome</a></li>
+			<li>Demo images from - <a href="http://pixeden.com/" target="_blank">Pixeden.com</a></li>
+			<li>Demo images from - <a href="http://photodune.net/" target="_blank">Photodune</a></li>
+			<li>Demo images from - <a href="http://pixabay.com/" target="_blank">Pixabay</a></li>
+			<li>Demo images from - <a href="http://shutterstock.com/" target="_blank">shutterstock</a></li>
+			<li>Demo images from - <a href="http://www.invisionapp.com/do" target="_blank">Invisionapp Free Mobile UI</a></li>
+		</ul>		
+		<hr>
+		<p> All images, Icons, Logos, Fonts used in this template are free for commercial use.</p>
+		
+
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Author Name</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

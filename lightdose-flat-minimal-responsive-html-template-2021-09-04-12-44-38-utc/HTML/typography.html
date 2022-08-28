@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>
+			light-dose - Typography
+		</title>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+		<link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,600,700,700italic,800,800italic&subset=latin,cyrillic-ext,greek-ext,vietnamese,greek,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+		<link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" media="screen" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css" />
+		<link rel="stylesheet" media="screen" href="css/social-icons.css" />
+		<link rel="stylesheet" media="screen" href="css/light-dose.css" />
+		<link rel="stylesheet" media="screen" href="css/demo.css" />
+		<!--[if IE 8]>
+			<link rel="stylesheet" type="text/css" href="css/light-dose-ie8.css" />
+		<![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<!--BEGIN Preloader-->
+		<!--DESCRIPTION
+
+			Spinner configuration can be changed using:
+				http://fgnass.github.io/spin.js/
+			After configuration <Spinner options> section should be replaced with desired options.
+		-->
+		<script type="text/javascript" src="js/spin.min.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			var element = document.createElement( 'div' );
+			element.id = 'spin';
+			element.style.position = 'fixed';
+			element.style.zIndex = 10000;
+			element.style.top = 0;
+			element.style.right = 0;
+			element.style.bottom = 0;
+			element.style.left = 0;
+			element.style.width = '100%';
+			element.style.height = '100%';
+			element.style.background = '#FFF';
+			document.body.appendChild( element );
+			//	Starting a spin
+
+			//<!--BEGIN Spinner options-->
+			var opts = {
+			  lines: 7, // The number of lines to draw
+			  length: 0, // The length of each line
+			  width: 7, // The line thickness
+			  radius: 7, // The radius of the inner circle
+			  corners: 0.9, // Corner roundness (0..1)
+			  rotate: 0, // The rotation offset
+			  direction: 1, // 1: clockwise, -1: counterclockwise
+			  color: '#000', // #rgb or #rrggbb or array of colors
+			  speed: 1.2, // Rounds per second
+			  trail: 85, // Afterglow percentage
+			  shadow: false, // Whether to render a shadow
+			  hwaccel: false, // Whether to use hardware acceleration
+			  className: 'spinner', // The CSS class to assign to the spinner
+			  zIndex: 2e9, // The z-index (defaults to 2000000000)
+			  top: 'auto', // Top position relative to parent in px
+			  left: 'auto' // Left position relative to parent in px
+			};
+			//<!--END Spinner options-->
+			var target = document.getElementById( 'spin' );
+			var spinner = new Spinner( opts ).spin( target );
+		</script>
+		<!--END	Preloader-->
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+		<article class="theme-white background foreground links transition">
+			<section class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
+						<h1>
+							Heading 1
+						</h1>
+						<h2>
+							Heading 2
+						</h2>
+						<h3>
+							Heading 3
+						</h3>
+						<h4>
+							Heading 4
+						</h4>
+						<h5>
+							Heading 5
+						</h5>
+						<h6>
+							Heading 6
+						</h6>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
+						<p>
+							<a class="demo link white" href="">
+								Default link
+							</a>
+							<br />
+							<a class="demo hover white" href="">
+								Hovered link
+							</a>
+							<br />
+							<a class="demo active-focus white" href="">
+								Active link
+							</a>
+							<br />
+							<a class="demo visited white" href="">
+								Visited link
+							</a>
+						</p>
+					</div>
+					<div class="clearfix">
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<p>
+							Donec eget metus lorem. Phasellus nec nunc id risus aliquet varius non quis odio. Donec commodo ante ut leo imperdiet, in tristique est venenatis. Morbi hendrerit ac ipsum sed cursus. Praesent condimentum semper nisl, at posuere arcu ultrices eleifend. Suspendisse venenatis cursus dignissim. Sed feugiat porta interdum. Cras vulputate sem sit amet placerat condimentum. Vivamus ultricies lobortis nisi, et condimentum eros gravida at.
+						</p>
+						<p>
+							Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Praesent condimentum semper nisl, at posuere arcu ultrices eleifend. Suspendisse venenatis cursus dignissim.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<h2>
+							Images
+						</h2>
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-5 col-xs-12">
+								<img class="img-responsive" src="img/light-dose/image-dummy.jpg" alt="" />
+								<p>
+									<small>
+										<i>
+											Quisque nec elit consequat, pulvinar nunc
+											Vivamus vehicula placerat viverra.
+										</i>
+									</small>
+								</p>
+							</div>
+							<div class="col-lg-9 col-md-9 col-sm-7 col-xs-12">
+								<p>
+									Vestibulum et tincidunt massa, id blandit urna. Ut varius, sem ut tristique consequat, arcu mauris fermentum nulla, a aliquet erat diam vitae ante. Phasellus vitae massa non nisl ullamcorper volutpat eget quis sapien. Donec ultrices commodo metus ac fermentum. Quisque nec elit consequat, pulvinar dolor eget, mattis felis. Nunc non mi rhoncus, convallis felis id, tempor erat.
+								</p>
+								<p>
+									Donec ultrices commodo metus ac fermentum. Quisque nec elit consequat, pulvinar dolor eget, mattis felis. Nunc non mi rhoncus, convallis felis id, tempor erat. Ut varius, sem ut tristique consequat, arcu mauris fermentum nulla,  aliquet erat diam vitae ante. Phasellus vitae massa non nisl ullamcorper volutpat eget quis sapien. Quisque nec elit consequat, pulvinar dolor eget, mattis felis.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<h2>
+							Lists
+						</h2>
+						<p>
+							Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Quisque nec elit consequat, pulvinar dolor eget, mattis felis.
+						</p>
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<ol>
+									<li>
+										Suspendisse tempus tempor.
+									<li>
+										Duis ligula purus tempus.
+									<li>
+										Donec nisl nunc, feugiat justo.
+									<li>
+										Suspendisse potenti.
+									<li>
+										Vestibulum luctus gravida libero.
+								</ol>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<ul>
+									<li>
+										Suspendisse tempus tempor.
+									<li>
+										Duis ligula purus tempus.
+									<li>
+										Donec nisl nunc, feugiat justo.
+									<li>
+										Suspendisse potenti.
+									<li>
+										Vestibulum luctus gravida libero.
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<h2>
+							Tables
+						</h2>
+						<p>
+							Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla.
+						</p>
+						<div class="table-responsive">
+							<table class="table table-bordered">
+								<tr>
+									<th>
+										First column
+									</th>
+									<th>
+										Second column
+									</th>
+									<th>
+										Third column
+									</th>
+									<th>
+										Fourth column
+									</th>
+								</tr>
+								<tr>
+									<td>
+										One
+									</td>
+									<td>
+										no
+									</td>
+									<td>
+										yes
+									</td>
+									<td>
+										yes,all
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Two
+									</td>
+									<td>
+										0
+									</td>
+									<td>
+										1
+									</td>
+									<td>
+										all
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Three
+									</td>
+									<td>
+										$399
+									</td>
+									<td>
+										$599
+									</td>
+									<td>
+										$799
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Four
+									</td>
+									<td>
+										Four
+									</td>
+									<td>
+										Four
+									</td>
+									<td>
+										Four
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<h2>
+							Blockquotes
+						</h2>
+						<p>
+							Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+						</p>
+						<blockquote>
+							<p>
+								Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non nascetur ridiculus mus metus auctor fringilla natoque penatibus.
+							</p>
+							<small>
+								Someone famous in Source Title
+							</small>
+						</blockquote>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<form method="POST" action="/">
+							<div class="row">
+								<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+									<input class="form-control" type="text" name="Name" value="" placeholder="Name" />
+								</div>
+								<div class="col-lg-offset-1 col-lg-2 col-md-offset-1 col-md-2 col-sm-4 col-xs-6">
+									<input id="checkbox0" type="checkbox" name="checkbox0" value="Default" />
+									<label for="checkbox0">Default</label>
+								</div>
+								<div class="col-lg-offset-1 col-lg-2 col-md-offset-1 col-md-2 col-sm-4 col-xs-6">
+									<input id="checkbox1" type="checkbox" name="checkbox1" value="Checked" checked="checked" />
+									<label for="checkbox1">Checked</label>
+								</div>
+								<div class="col-lg-offset-1 col-lg-2 col-md-offset-1 col-md-2 col-sm-4 col-xs-6">
+									<input id="checkbox2" type="checkbox" name="checkbox2" value="Disabled"  disabled="disabled" />
+									<label for="checkbox2">Disabled</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+									<select class="form-control" id="Select0" name="Select">
+										<option value="Select">
+											Select
+										</option>
+										<option value="Lorem">
+											Lorem
+										</option>
+										<option value="ipsum">
+											ipsum
+										</option>
+										<option value="dolor">
+											dolor
+										</option>
+										<option value="sit">
+											sit
+										</option>
+										<option value="amet">
+											amet
+										</option>
+									</select>
+								</div>
+								<div class="col-lg-offset-1 col-lg-2 col-md-offset-1 col-md-2 col-sm-4 col-xs-6">
+									<input id="radio0" type="radio" name="radio" value="Default" />
+									<label for="radio0">Default</label>
+								</div>
+								<div class="col-lg-offset-1 col-lg-2 col-md-offset-1 col-md-2 col-sm-4 col-xs-6">
+									<input id="radio1" type="radio" name="radio" value="Checked" checked="checked" />
+									<label for="radio1">Checked</label>
+								</div>
+								<div class="col-lg-offset-1 col-lg-2 col-md-offset-1 col-md-2 col-sm-4 col-xs-6">
+									<input id="radio2" type="radio" name="radio" value="Disabled" disabled="disabled" />
+									<label for="radio2">Disabled</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+									<input class="btn" type="submit" name="Submit0" value="Submit" />
+								</div>
+								<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+									<input class="btn demo hover white" type="submit" name="Submit1" value="Submit" />
+								</div>
+								<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+									<input class="btn demo active-focus white" type="submit" name="Submit2" value="Submit" />
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</article>
+		<article class="theme-color background foreground links">
+			<section class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<form method="POST" action="/">
+							<div class="row">
+								<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+									<input class="form-control" type="text" name="Name" value="" placeholder="Name" />
+								</div>
+								<div class="col-lg-offset-1 col-lg-2 col-md-offset-1 col-md-2 col-sm-4 col-xs-6">
+									<input id="checkbox3" type="checkbox" name="checkbox3" value="Default" />
+									<label for="checkbox3">Default</label>
+								</div>
+								<div class="col-lg-offset-1 col-lg-2 col-md-offset-1 col-md-2 col-sm-4 col-xs-6">
+									<input id="checkbox4" type="checkbox" name="checkbox4" value="Checked" checked="checked" />
+									<label for="checkbox4">Checked</label>
+								</div>
+								<div class="col-lg-offset-1 col-lg-2 col-md-offset-1 col-md-2 col-sm-4 col-xs-6">
+									<input id="checkbox5" type="checkbox" name="checkbox5" value="Disabled"  disabled="disabled" />
+									<label for="checkbox5">Disabled</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+									<select class="form-control" id="Select1" name="Select">
+										<option value="Select">
+											Select
+										</option>
+										<option value="Lorem">
+											Lorem
+										</option>
+										<option value="ipsum">
+											ipsum
+										</option>
+										<option value="dolor">
+											dolor
+										</option>
+										<option value="sit">
+											sit
+										</option>
+										<option value="amet">
+											amet
+										</option>
+									</select>
+								</div>
+								<div class="col-lg-offset-1 col-lg-2 col-md-offset-1 col-md-2 col-sm-4 col-xs-6">
+									<input id="radio3" type="radio" name="radio" value="Default" />
+									<label for="radio3">Default</label>
+								</div>
+								<div class="col-lg-offset-1 col-lg-2 col-md-offset-1 col-md-2 col-sm-4 col-xs-6">
+									<input id="radio4" type="radio" name="radio" value="Checked" checked="checked" />
+									<label for="radio4">Checked</label>
+								</div>
+								<div class="col-lg-offset-1 col-lg-2 col-md-offset-1 col-md-2 col-sm-4 col-xs-6">
+									<input id="radio5" type="radio" name="radio" value="Disabled" disabled="disabled" />
+									<label for="radio5">Disabled</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+									<input class="btn" type="submit" name="Submit0" value="Submit" />
+								</div>
+								<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+									<input class="btn demo hover color" type="submit" name="Submit1" value="Submit" />
+								</div>
+								<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+									<input class="btn demo active-focus color" type="submit" name="Submit2" value="Submit" />
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</article>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+		<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="js/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
+		<script type="text/javascript" src="js/helper-plugins/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" src="js/helper-plugins/jquery.touchSwipe.min.js"></script>
+		<script type="text/javascript" src="js/helper-plugins/jquery.transit.min.js"></script>
+		<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+
+		<script type="text/javascript" src="js/jquery.customSelect.min.js"></script>
+
+		<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+
+		<script type="text/javascript" src="js/validate.min.js"></script>
+
+		<script type="text/javascript" src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+
+		<script type="text/javascript" src="js/StackBlur.js"></script>
+		
+		<script src="//malsup.github.com/jquery.form.js"></script> 
+
+		<script type="text/javascript" src="js/user.js"></script>
+		<script type="text/javascript" src="js/light-dose.js"></script>
+	</body>
+</html>

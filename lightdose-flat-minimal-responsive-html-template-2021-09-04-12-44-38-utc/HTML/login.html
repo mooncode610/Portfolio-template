@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>
+			light-dose - Login
+		</title>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+		<link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,600,700,700italic,800,800italic&subset=latin,cyrillic-ext,greek-ext,vietnamese,greek,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+		<link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" media="screen" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css" />
+		<link rel="stylesheet" media="screen" href="css/social-icons.css" />
+		<link rel="stylesheet" media="screen" href="css/light-dose.css" />
+		<link rel="stylesheet" media="screen" href="css/demo.css" />
+		<!--[if IE 8]>
+			<link rel="stylesheet" type="text/css" href="css/light-dose-ie8.css" />
+		<![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<!--BEGIN Preloader-->
+		<!--DESCRIPTION
+
+			Spinner configuration can be changed using:
+				http://fgnass.github.io/spin.js/
+			After configuration <Spinner options> section should be replaced with desired options.
+		-->
+		<script type="text/javascript" src="js/spin.min.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			var element = document.createElement( 'div' );
+			element.id = 'spin';
+			element.style.position = 'fixed';
+			element.style.zIndex = 10000;
+			element.style.top = 0;
+			element.style.right = 0;
+			element.style.bottom = 0;
+			element.style.left = 0;
+			element.style.width = '100%';
+			element.style.height = '100%';
+			element.style.background = '#FFF';
+			document.body.appendChild( element );
+			//	Starting a spin
+
+			//<!--BEGIN Spinner options-->
+			var opts = {
+			  lines: 7, // The number of lines to draw
+			  length: 0, // The length of each line
+			  width: 7, // The line thickness
+			  radius: 7, // The radius of the inner circle
+			  corners: 0.9, // Corner roundness (0..1)
+			  rotate: 0, // The rotation offset
+			  direction: 1, // 1: clockwise, -1: counterclockwise
+			  color: '#000', // #rgb or #rrggbb or array of colors
+			  speed: 1.2, // Rounds per second
+			  trail: 85, // Afterglow percentage
+			  shadow: false, // Whether to render a shadow
+			  hwaccel: false, // Whether to use hardware acceleration
+			  className: 'spinner', // The CSS class to assign to the spinner
+			  zIndex: 2e9, // The z-index (defaults to 2000000000)
+			  top: 'auto', // Top position relative to parent in px
+			  left: 'auto' // Left position relative to parent in px
+			};
+			//<!--END Spinner options-->
+			var target = document.getElementById( 'spin' );
+			var spinner = new Spinner( opts ).spin( target );
+		</script>
+		<!--END	Preloader-->
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+		<!--BEGIN Topper-->
+		<header class="theme-white background foreground topper" id="navigation">
+			<div class="container stretch-height text-right">
+				<a class="logo scroll pull-left text-left" href="index.html#slider">
+					<!--BEGIN Logo image-->
+					<!--DESCRIPTION
+
+						Any image format can be used.
+						In this example SVG logo is used with PNG fallback.
+
+					-->
+					<div class="image pull-left">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 width="50px" height="28px" viewBox="0 0 50 28" enable-background="new 0 0 50 28" xml:space="preserve">
+							<switch>
+								<g>
+									<path fill="black" d="M10.822,0.013H-0.001v16.185v10.788h10.824h10.824V16.198H10.822V0.013z"/>
+									<path fill="black" d="M32.471,0.013H16.235v10.789h16.236c1.494,0,2.705,1.208,2.705,2.697c0,1.491-1.211,2.698-2.705,2.698v0.001
+										h-5.413v10.788h5.413c7.472,0,13.53-6.038,13.53-13.487C46.001,6.051,39.943,0.013,32.471,0.013z"/>
+								</g>
+								<foreignObject width="50" height="28">
+									<img src="img/light-dose-logo.png" alt="" />
+								</foreignObject>
+							</switch>
+						</svg>
+					</div>
+					<!--END Logo image-->
+
+					<!--BEGIN Logo text-->
+					<div class="text pull-left">
+						Light Dose
+						<br />
+						Flat &amp; Minimal
+					</div>
+					<!--END Logo text-->
+				</a>
+
+				<div class="menu">
+					<div class="stretch-both">
+
+						<!--BEGIN Topper menu-->
+						<ul class="nav list-inline navbar-nav scale-up">
+							<li>
+								<a class="scroll" href="index.html#slider">
+									Home
+									<div class="overlay">
+									</div>
+								</a>
+							<li>
+								<a class="scroll" href="index.html#about">
+									About
+									<div class="overlay">
+									</div>
+								</a>
+							<li>
+								<a class="scroll" href="index.html#services">
+									Services
+									<div class="overlay">
+									</div>
+								</a>
+							<li>
+								<a class="scroll" href="index.html#works">
+									Works
+									<div class="overlay">
+									</div>
+								</a>
+							<li>
+								<a class="scroll" href="index.html#team">
+									Team
+									<div class="overlay">
+									</div>
+								</a>
+							<li>
+								<a class="scroll" href="index.html#contacts">
+									Contacts
+									<div class="overlay">
+									</div>
+								</a>
+							<li>
+								<a class="scroll" href="blog.html#blog">
+									Blog
+									<div class="overlay">
+									</div>
+								</a>
+							<li>
+								<a class="dropdown" href="#">
+									More&hellip;
+								</a>
+								<ul class="dropdown-slide text-left pull-right">
+									<li>
+										<a class="scroll" href="login.html">
+											Login
+										</a>
+									<li>
+										<a class="scroll" href="register.html">
+											Register
+										</a>
+									<li>
+										<a class="scroll" href="typography.html">
+											Typography
+										</a>
+									<li>
+										<a class="scroll" href="post.html">
+											Blog post
+										</a>
+								</ul>
+						</ul>
+						<!--END Topper menu-->
+
+					</div>
+				</div>
+
+				<div class="language-menu">
+					<div class="stretch-both">
+						
+						<ul class="nav list-inline navbar-nav">
+							<li class="selected">
+								<a href="/">
+									Eng
+								</a>
+							<li>
+								<a href="/">
+									Rus
+								</a>
+							<li>
+								<a href="/">
+									Ukr
+								</a>
+						</ul>
+						
+					</div>
+				</div>
+
+				<button type="button" class="menu-toggle fa">
+					&#xf0c9;
+				</button>
+
+			</div>
+		</header>
+		<!--END Topper-->
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+		<!--BEGIN Login-->
+		<article class="lower login page-light-dose theme-color foreground links" id="login">
+			<div class="underlay">
+				<header class="text-center">
+					<div class="sect">
+						<div class="line line-left">
+						</div>
+						&sect;
+						<div class="line line-right">
+						</div>
+					</div>
+					<h2>
+						Login
+					</h2>
+				</header>
+				<div class="container">
+
+					<!--BEGIN Login form-->
+					<form name="loginForm" method="POST" action="index.html" class="text-center validator">
+						<input name="loginFormUsername" type="text" class="form-control" placeholder="Username" data-validator="required|alpha_numeric">
+						<input name="loginFormPassword" type="password" class="form-control" placeholder="Password" data-validator="required">
+						<span class="checkbox text-left">
+							<input id="RememberMe" type="checkbox" name="RememberMe" value="Remember me">
+							<label for="RememberMe">Remember me</label>
+						</span>
+						<input name="Submit" type="submit" class="btn btn-default pull-left" value="Login" />
+						<a class="pull-right" href="register.html">
+							Registration
+						</a>
+					</form>
+					<!--END Login form-->
+
+				</div>
+			</div>
+		</article>
+		<!--END Login-->
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+		<!--BEGIN Footer-->
+		<footer class="footer theme-color background foreground text-center">
+			<div class="container">
+				<ul class="list-inline nav-footer">
+					<li>
+						<a class="scroll" href="index.html#body">
+							Home
+						</a>
+					<li>
+						<a class="scroll" href="index.html#about">
+							About
+						</a>
+					<li>
+						<a class="scroll" href="index.html#services">
+							Services
+						</a>
+					<li>
+						<a class="scroll" href="index.html#works">
+							Works
+						</a>
+					<li>
+						<a class="scroll" href="index.html#team">
+							Team
+						</a>
+					<li>
+						<a class="scroll" href="index.html#contacts">
+							Contacts
+						</a>
+					<li>
+						<a class="scroll" href="blog.html#blog">
+							Blog
+						</a>
+					<li>
+						<a class="scroll" href="login.html">
+							Login
+						</a>
+					<li>
+						<a class="scroll" href="post.html">
+							Post
+						</a>
+					<li>
+						<a class="scroll" href="typography.html">
+							Typography
+						</a>
+					<li>
+						<a class="scroll" href="register.html">
+							Register
+						</a>
+				</ul>
+				<div class="copyright">
+					Copyright &copy; ItemBridge Inc. 2013
+					<div class="sect">
+						&sect;
+					</div>
+				</div>
+				<div class="inner-wrapper text-center stretch-width">
+					<div>
+						<!--BEGIN Footer social-->
+						<!--DESCRIPTION
+
+							For supported social icon list one should see class reference sheet.
+
+						-->
+						<ul class="list-inline grid reverse social">
+							<li>
+								<a class="icon-reddit text-center" href="#">
+								</a>
+							<li>
+								<a class="icon-digg text-center" href="#">
+								</a>
+							<li>
+								<a class="icon-linkedin text-center" href="#">
+								</a>
+							<li>
+								<a class="icon-facebook text-center" href="#">
+								</a>
+							<li>
+								<a class="icon-twitter text-center" href="#">
+								</a>
+							<li>
+								<a class="icon-google text-center" href="#">
+								</a>
+						</ul>
+						<!--END Footer social-->
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--END Footer-->
+
+		<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+			<div class="slides">
+			</div>
+			<h3 class="title">
+			</h3>
+			<a class="prev">
+				‹
+			</a>
+			<a class="next">
+				›
+			</a>
+			<a class="close">
+				×
+			</a>
+			<a class="play-pause">
+			</a>
+			<ol class="indicator">
+			</ol>
+		</div>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+		<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="js/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
+		<script type="text/javascript" src="js/helper-plugins/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" src="js/helper-plugins/jquery.touchSwipe.min.js"></script>
+		<script type="text/javascript" src="js/helper-plugins/jquery.transit.min.js"></script>
+		<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+
+		<script type="text/javascript" src="js/jquery.customSelect.min.js"></script>
+
+		<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+
+		<script type="text/javascript" src="js/validate.min.js"></script>
+
+		<script type="text/javascript" src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+
+		<script type="text/javascript" src="js/StackBlur.js"></script>
+
+		<script src="//malsup.github.com/jquery.form.js"></script> 
+
+		<script type="text/javascript" src="js/user.js"></script>
+		<script type="text/javascript" src="js/light-dose.js"></script>
+	</body>
+</html>

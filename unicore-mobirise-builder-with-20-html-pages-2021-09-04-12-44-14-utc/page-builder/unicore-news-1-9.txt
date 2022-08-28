@@ -1,0 +1,18 @@
+Unicore Page Builder v1.9
+
+What's new?
+* Compatibility with Mobirise 4.x
+* Bug fixes with drop down menu.
+
+How to Upgrade:
+1. Download the LATEST version of Mobirise from https://mobirise.com/
+2. Download the theme from your Themeforest account http://themeforest.net/downloads
+3. Unzip unicore-x-x.mbrext and import to Mobirise "Menu->Extensions&Themes->Import"
+4. Restart the Mobirise app.
+More info: http://electricblaze.com/unicore/page-builder/help.html
+
+---
+Home Page:
+http://electricblaze.com/unicore/page-builder/
+How to use video:
+https://www.youtube.com/watch?v=z41Uy3Tg-yI
